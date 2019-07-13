@@ -64,7 +64,7 @@ print(emoji_pattern)
 #"curse word" example: 
 
 
-search = api.GetSearch("fuck you", count=50)
+search = api.GetSearch("f*#$ you", count=50)
 for t in search:
     tweets = t.text.lower()
     tweets = re.sub(r"http\S+", "", tweets)
@@ -82,7 +82,7 @@ for t in search:
 #"sexuality" example: 
 
 
-search = api.GetSearch("you are a pussy", count=50)
+search = api.GetSearch("you are a p*#$", count=50)
 for t in search:
     tweets = t.text.lower()
     tweets = re.sub(r"http\S+", "", tweets)
